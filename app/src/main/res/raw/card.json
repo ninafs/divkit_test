@@ -1,0 +1,140 @@
+{
+  "card": {
+    "log_id": "div2_sample_card",
+    "states": [
+      {
+        "state_id": 0,
+        "div": {
+          "visibility_action": {
+            "log_id": "visible"
+          },
+          "background": [
+            {
+              "color": "@{getDictOptColor('#00ffffff', local_palette, 'bg_primary', theme)}",
+              "type": "solid"
+            }
+          ],
+          "height": {
+            "type": "match_parent"
+          },
+          "orientation": "overlap",
+          "type": "container",
+          "items": [
+            {
+              "type": "_template_lottie",
+              "width": {
+                "type": "match_parent"
+              },
+              "alignment_horizontal": "center",
+              "alignment_vertical": "center",
+              "height": {
+                "type": "match_parent"
+              },
+              "lottie_params": {
+                "lottie_url": "https://res.cloudinary.com/dljvlt6tu/raw/upload/v1738643673/Mobile-Splash-sc_jlg2ub.json",
+                "scale": "fill"
+              },
+              "scale": "fill"
+            }
+          ]
+        }
+      }
+    ],
+    "variables": [
+      {
+        "type": "dict",
+        "name": "local_palette",
+        "value": {
+          "bg_primary": {
+            "name": "Primary background",
+            "light": "#fff",
+            "dark": "#000"
+          },
+          "color0": {
+            "name": "Secondary background",
+            "light": "#eeeeee",
+            "dark": "#000"
+          }
+        }
+      }
+    ]
+  },
+  "templates": {
+    "input_text": {
+      "type": "input",
+      "text_variable": "my_borderless_text",
+      "width": {
+        "type": "match_parent"
+      },
+      "height": {
+        "type": "wrap_content"
+      },
+      "text_alignment_horizontal": "left",
+      "margins": {
+        "left": 16,
+        "top": 20,
+        "right": 16,
+        "bottom": 16
+      },
+      "paddings": {
+        "left": 16,
+        "top": 10,
+        "right": 16,
+        "bottom": 10
+      },
+      "alignment_horizontal": "center",
+      "alignment_vertical": "center",
+      "font_size": 16,
+      "font_weight": "medium",
+      "text_color": "#000000",
+      "hint_color": "#888888",
+      "highlight_color": "#e0bae3",
+      "line_height": 22,
+      "accessibility": {
+        "description": "Enter text here",
+        "hint": "Type your response",
+        "state_description": "Active input field"
+      },
+      "autocapitalization": "sentences",
+      "keyboard_type": "default",
+      "background": [
+        {
+          "type": "solid",
+          "color": "#f8f8f8"
+        }
+      ],
+      "border": {
+        "corner_radius": 8,
+        "stroke": {
+          "color": "#cccccc",
+          "width": 1
+        }
+      },
+      "enter_key_type": "done",
+      "on_focus": [
+        {
+          "type": "highlight",
+          "highlight_color": "#d3d3d3"
+        }
+      ],
+      "visibility": "visible",
+      "max_length": 100,
+      "mask": {
+        "type": "text",
+        "pattern": "[A-Za-z0-9 ]*"
+      },
+      "text_alignment_vertical": "center"
+    },
+    "_template_lottie": {
+      "type": "gif",
+      "scale": "fit",
+      "extensions": [
+        {
+          "id": "lottie",
+          "$params": "lottie_params"
+        }
+      ],
+      "gif_url": "https://yastatic.net/s3/home/divkit/empty2.png"
+    }
+  }
+}

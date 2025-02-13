@@ -8,8 +8,12 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.0"
 composeBom = "2024.04.01"
+divkit = "30.30.0"
 
 [libraries]
+divkit-div = { group = "com.yandex.div", name = "div", version.ref = "divkit" }
+divkit-coil = { group = "com.yandex.div", name = "coil", version.ref = "divkit" }
+divkit-lottie = { group = "com.yandex.div", name = "div-lottie", version.ref = "divkit" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

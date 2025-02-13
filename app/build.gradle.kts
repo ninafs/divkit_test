@@ -40,6 +40,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.divkit.div)
+    implementation(libs.divkit.coil)
+    implementation (libs.divkit.lottie)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
